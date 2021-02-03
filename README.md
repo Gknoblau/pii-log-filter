@@ -5,6 +5,14 @@
 ./mvnw spring-boot:run
 ```
 
+## To Run PII Model Service (required):
+```
+cd model
+pip install -r requirements.txt
+export FLASK_APP=predict.py
+flask run
+```
+
 ## Send Request to Running App:
 ```
 curl -X POST \
